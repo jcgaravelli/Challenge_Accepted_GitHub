@@ -1,0 +1,6 @@
+framework module Pods_Challenge_Accepted_GitHubUITests {
+  umbrella header "Pods-Challenge_Accepted_GitHubUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
