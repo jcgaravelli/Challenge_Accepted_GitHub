@@ -46,9 +46,9 @@
 		91C16322FD27E218BF64F84D /* Pods-Challenge_Accepted_GitHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubTests/Pods-Challenge_Accepted_GitHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2889B0E1E5FC73700570945 /* Challenge_Accepted_GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge_Accepted_GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2889B111E5FC73700570945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2889B131E5FC73700570945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2889B131E5FC73700570945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../View/ViewController.swift; sourceTree = "<group>"; };
 		D2889B161E5FC73700570945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2889B181E5FC73700570945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2889B181E5FC73700570945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resource/Assets.xcassets; sourceTree = "<group>"; };
 		D2889B1B1E5FC73700570945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2889B1D1E5FC73700570945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2889B221E5FC73800570945 /* Challenge_Accepted_GitHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challenge_Accepted_GitHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,12 +137,9 @@
 		D2889B101E5FC73700570945 /* Challenge_Accepted_GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				D2889B111E5FC73700570945 /* AppDelegate.swift */,
-				D2889B131E5FC73700570945 /* ViewController.swift */,
-				D2889B151E5FC73700570945 /* Main.storyboard */,
-				D2889B181E5FC73700570945 /* Assets.xcassets */,
-				D2889B1A1E5FC73700570945 /* LaunchScreen.storyboard */,
-				D2889B1D1E5FC73700570945 /* Info.plist */,
+				D2889B3F1E5FD2D200570945 /* Source */,
+				D2889B431E5FD3AC00570945 /* Resource */,
+				D2889B451E5FD4AB00570945 /* SupportingFiles */,
 			);
 			path = Challenge_Accepted_GitHub;
 			sourceTree = "<group>";
@@ -163,6 +160,99 @@
 				D2889B331E5FC73800570945 /* Info.plist */,
 			);
 			path = Challenge_Accepted_GitHubUITests;
+			sourceTree = "<group>";
+		};
+		D2889B3F1E5FD2D200570945 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B401E5FD30000570945 /* Model */,
+				D2889B411E5FD30B00570945 /* View */,
+				D2889B421E5FD32B00570945 /* Controller */,
+				D2889B491E5FD84A00570945 /* Business */,
+				D2889B461E5FD52600570945 /* Provider */,
+				D2889B481E5FD81C00570945 /* Infrastructure */,
+			);
+			name = Source;
+			path = Source/Infrastructure;
+			sourceTree = "<group>";
+		};
+		D2889B401E5FD30000570945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D2889B411E5FD30B00570945 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B131E5FC73700570945 /* ViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D2889B421E5FD32B00570945 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D2889B431E5FD3AC00570945 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B181E5FC73700570945 /* Assets.xcassets */,
+				D2889B441E5FD3C600570945 /* Storyboards */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		D2889B441E5FD3C600570945 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B151E5FC73700570945 /* Main.storyboard */,
+				D2889B1A1E5FC73700570945 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D2889B451E5FD4AB00570945 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B1D1E5FC73700570945 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D2889B461E5FD52600570945 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B471E5FD52F00570945 /* Networking */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		D2889B471E5FD52F00570945 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D2889B481E5FD81C00570945 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				D2889B111E5FC73700570945 /* AppDelegate.swift */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		D2889B491E5FD84A00570945 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Business;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,16 +332,16 @@
 				TargetAttributes = {
 					D2889B0D1E5FC73700570945 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D2889B211E5FC73800570945 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = D2889B0D1E5FC73700570945;
 					};
 					D2889B2C1E5FC73800570945 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = D2889B0D1E5FC73700570945;
 					};
 				};
@@ -542,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -586,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -601,10 +691,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				INFOPLIST_FILE = Challenge_Accepted_GitHub/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Challenge_Accepted_GitHub/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jcgaravelli.Challenge-Accepted-GitHub";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -616,10 +707,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				INFOPLIST_FILE = Challenge_Accepted_GitHub/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Challenge_Accepted_GitHub/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jcgaravelli.Challenge-Accepted-GitHub";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -631,6 +723,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Challenge_Accepted_GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcgaravelli.Challenge-Accepted-GitHubTests";
@@ -646,6 +740,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Challenge_Accepted_GitHubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcgaravelli.Challenge-Accepted-GitHubTests";
@@ -660,10 +756,13 @@
 			baseConfigurationReference = 6F34AD560710FC42F2D7EDC0 /* Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Challenge_Accepted_GitHubUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcgaravelli.Challenge-Accepted-GitHubUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Challenge_Accepted_GitHub;
 			};
@@ -674,10 +773,13 @@
 			baseConfigurationReference = DA80C051927143EAB4E87081 /* Pods-Challenge_Accepted_GitHubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Challenge_Accepted_GitHubUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jcgaravelli.Challenge-Accepted-GitHubUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Challenge_Accepted_GitHub;
 			};
