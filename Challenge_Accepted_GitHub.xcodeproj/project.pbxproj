@@ -11,6 +11,10 @@
 		CAD455E4168D0A3848B1578A /* Pods_Challenge_Accepted_GitHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C2855CA2D0916307219879 /* Pods_Challenge_Accepted_GitHubUITests.framework */; };
 		CDCF6A714989800F0FBF7575 /* Pods_Challenge_Accepted_GitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BFAD6324D031190CAA56CE /* Pods_Challenge_Accepted_GitHub.framework */; };
 		D26E69F41E62BEB500E39A92 /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E69F31E62BEB500E39A92 /* SearchRepositoriesViewController.swift */; };
+		D26E69FA1E63423300E39A92 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E69F91E63423300E39A92 /* User.m */; };
+		D26E69FD1E6342E800E39A92 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E69FC1E6342E800E39A92 /* Repository.m */; };
+		D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */; };
+		D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */; };
 		D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2889B111E5FC73700570945 /* AppDelegate.swift */; };
 		D2889B171E5FC73700570945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2889B151E5FC73700570945 /* Main.storyboard */; };
 		D2889B191E5FC73700570945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2889B181E5FC73700570945 /* Assets.xcassets */; };
@@ -19,8 +23,8 @@
 		D2889B321E5FC73800570945 /* Challenge_Accepted_GitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2889B311E5FC73800570945 /* Challenge_Accepted_GitHubUITests.swift */; };
 		D2C68B891E62B28F00AFCD6F /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C68B881E62B28F00AFCD6F /* UserRequest.swift */; };
 		D2C68B8B1E62B2BD00AFCD6F /* RepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C68B8A1E62B2BD00AFCD6F /* RepositoryRequest.swift */; };
-		D2D7228C1E6124FC00C1F208 /* User.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D7228B1E6124FC00C1F208 /* User.xib */; };
-		D2D7228E1E61268700C1F208 /* Repository.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D7228D1E61268700C1F208 /* Repository.xib */; };
+		D2D7228C1E6124FC00C1F208 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */; };
+		D2D7228E1E61268700C1F208 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D7228D1E61268700C1F208 /* RepositoryTableViewCell.xib */; };
 		D2D722901E61FA2800C1F208 /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D7228F1E61FA2800C1F208 /* SearchUsersViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,13 @@
 		6F34AD560710FC42F2D7EDC0 /* Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubUITests/Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91C16322FD27E218BF64F84D /* Pods-Challenge_Accepted_GitHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubTests/Pods-Challenge_Accepted_GitHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		D26E69F31E62BEB500E39A92 /* SearchRepositoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRepositoriesViewController.swift; path = Challenge_Accepted_GitHub/Source/Controller/SearchRepositoriesViewController.swift; sourceTree = SOURCE_ROOT; };
+		D26E69F71E63423300E39A92 /* Challenge_Accepted_GitHub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Challenge_Accepted_GitHub-Bridging-Header.h"; path = "Source/Infrastructure/Challenge_Accepted_GitHub-Bridging-Header.h"; sourceTree = "<group>"; };
+		D26E69F81E63423300E39A92 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Challenge_Accepted_GitHub/Source/Model/User.h; sourceTree = SOURCE_ROOT; };
+		D26E69F91E63423300E39A92 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Challenge_Accepted_GitHub/Source/Model/User.m; sourceTree = SOURCE_ROOT; };
+		D26E69FB1E6342E800E39A92 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Repository.h; path = Challenge_Accepted_GitHub/Source/Model/Repository.h; sourceTree = SOURCE_ROOT; };
+		D26E69FC1E6342E800E39A92 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Repository.m; path = Challenge_Accepted_GitHub/Source/Model/Repository.m; sourceTree = SOURCE_ROOT; };
+		D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/UserTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/RepositoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D2889B0E1E5FC73700570945 /* Challenge_Accepted_GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge_Accepted_GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2889B111E5FC73700570945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2889B161E5FC73700570945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,8 +75,8 @@
 		D2889B331E5FC73800570945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C68B881E62B28F00AFCD6F /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRequest.swift; path = Challenge_Accepted_GitHub/Source/Provider/Networking/UserRequest.swift; sourceTree = SOURCE_ROOT; };
 		D2C68B8A1E62B2BD00AFCD6F /* RepositoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryRequest.swift; path = Challenge_Accepted_GitHub/Source/Provider/Networking/RepositoryRequest.swift; sourceTree = SOURCE_ROOT; };
-		D2D7228B1E6124FC00C1F208 /* User.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = User.xib; path = ../../User.xib; sourceTree = "<group>"; };
-		D2D7228D1E61268700C1F208 /* Repository.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Repository.xib; path = ../../Repository.xib; sourceTree = "<group>"; };
+		D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTableViewCell.xib; path = ../View/UserTableViewCell.xib; sourceTree = "<group>"; };
+		D2D7228D1E61268700C1F208 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RepositoryTableViewCell.xib; path = ../View/RepositoryTableViewCell.xib; sourceTree = "<group>"; };
 		D2D7228F1E61FA2800C1F208 /* SearchUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchUsersViewController.swift; path = Challenge_Accepted_GitHub/Source/Controller/SearchUsersViewController.swift; sourceTree = SOURCE_ROOT; };
 		D5BDEEA1F0C3B7ECACD50CB1 /* Pods-Challenge_Accepted_GitHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHub/Pods-Challenge_Accepted_GitHub.debug.xcconfig"; sourceTree = "<group>"; };
 		DA80C051927143EAB4E87081 /* Pods-Challenge_Accepted_GitHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubUITests/Pods-Challenge_Accepted_GitHubUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +199,10 @@
 		D2889B401E5FD30000570945 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D26E69F81E63423300E39A92 /* User.h */,
+				D26E69F91E63423300E39A92 /* User.m */,
+				D26E69FB1E6342E800E39A92 /* Repository.h */,
+				D26E69FC1E6342E800E39A92 /* Repository.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -195,8 +210,10 @@
 		D2889B411E5FD30B00570945 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D2D7228B1E6124FC00C1F208 /* User.xib */,
-				D2D7228D1E61268700C1F208 /* Repository.xib */,
+				D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */,
+				D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */,
+				D2D7228D1E61268700C1F208 /* RepositoryTableViewCell.xib */,
+				D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -231,6 +248,7 @@
 		D2889B451E5FD4AB00570945 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D26E69F71E63423300E39A92 /* Challenge_Accepted_GitHub-Bridging-Header.h */,
 				D2889B1D1E5FC73700570945 /* Info.plist */,
 			);
 			name = SupportingFiles;
@@ -338,6 +356,7 @@
 				TargetAttributes = {
 					D2889B0D1E5FC73700570945 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					D2889B211E5FC73800570945 = {
@@ -377,10 +396,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D7228E1E61268700C1F208 /* Repository.xib in Resources */,
+				D2D7228E1E61268700C1F208 /* RepositoryTableViewCell.xib in Resources */,
 				D2889B1C1E5FC73700570945 /* LaunchScreen.storyboard in Resources */,
 				D2889B191E5FC73700570945 /* Assets.xcassets in Resources */,
-				D2D7228C1E6124FC00C1F208 /* User.xib in Resources */,
+				D2D7228C1E6124FC00C1F208 /* UserTableViewCell.xib in Resources */,
 				D2889B171E5FC73700570945 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,8 +563,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */,
+				D26E69FD1E6342E800E39A92 /* Repository.m in Sources */,
 				D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */,
 				D2D722901E61FA2800C1F208 /* SearchUsersViewController.swift in Sources */,
+				D26E69FA1E63423300E39A92 /* User.m in Sources */,
+				D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */,
 				D2C68B891E62B28F00AFCD6F /* UserRequest.swift in Sources */,
 				D26E69F41E62BEB500E39A92 /* SearchRepositoriesViewController.swift in Sources */,
 				D2C68B8B1E62B2BD00AFCD6F /* RepositoryRequest.swift in Sources */,
@@ -701,6 +724,7 @@
 			baseConfigurationReference = D5BDEEA1F0C3B7ECACD50CB1 /* Pods-Challenge_Accepted_GitHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Challenge_Accepted_GitHub/Info.plist";
@@ -708,6 +732,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Challenge_Accepted_GitHub/Source/Infrastructure/Challenge_Accepted_GitHub-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -717,6 +743,7 @@
 			baseConfigurationReference = 3D4DB70EC273357CC132AD9D /* Pods-Challenge_Accepted_GitHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Challenge_Accepted_GitHub/Info.plist";
@@ -724,6 +751,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.challenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Challenge_Accepted_GitHub/Source/Infrastructure/Challenge_Accepted_GitHub-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

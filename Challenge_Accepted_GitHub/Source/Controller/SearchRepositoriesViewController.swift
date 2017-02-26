@@ -17,8 +17,7 @@ class SearchRepositoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.repositoriesTableView.tableFooterView = UIView()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

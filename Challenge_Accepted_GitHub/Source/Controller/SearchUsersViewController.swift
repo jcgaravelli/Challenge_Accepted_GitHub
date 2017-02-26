@@ -10,13 +10,14 @@ import UIKit
 
 class SearchUsersViewController: UIViewController, UserRequestDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var usersTableView: UITableView!
     @IBOutlet weak var userSearchBar: UISearchBar!
     
     let userRequest: UserRequest = UserRequest()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.usersTableView.tableFooterView = UIView()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
