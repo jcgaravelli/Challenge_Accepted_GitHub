@@ -15,6 +15,7 @@
 		D26E69FD1E6342E800E39A92 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E69FC1E6342E800E39A92 /* Repository.m */; };
 		D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */; };
 		D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */; };
+		D26E6A091E63603E00E39A92 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A081E63603E00E39A92 /* Identifiable.swift */; };
 		D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2889B111E5FC73700570945 /* AppDelegate.swift */; };
 		D2889B171E5FC73700570945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2889B151E5FC73700570945 /* Main.storyboard */; };
 		D2889B191E5FC73700570945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2889B181E5FC73700570945 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		D26E69FC1E6342E800E39A92 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Repository.m; path = Challenge_Accepted_GitHub/Source/Model/Repository.m; sourceTree = SOURCE_ROOT; };
 		D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/UserTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/RepositoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D26E6A081E63603E00E39A92 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Challenge_Accepted_GitHub/Source/Model/Identifiable/Identifiable.swift; sourceTree = SOURCE_ROOT; };
 		D2889B0E1E5FC73700570945 /* Challenge_Accepted_GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge_Accepted_GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2889B111E5FC73700570945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2889B161E5FC73700570945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +135,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D26E6A0A1E63604300E39A92 /* Identifiable */ = {
+			isa = PBXGroup;
+			children = (
+				D26E6A081E63603E00E39A92 /* Identifiable.swift */,
+			);
+			name = Identifiable;
+			path = ../Model/Identifiable;
+			sourceTree = "<group>";
+		};
 		D2889B051E5FC73700570945 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +210,7 @@
 		D2889B401E5FD30000570945 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D26E6A0A1E63604300E39A92 /* Identifiable */,
 				D26E69F81E63423300E39A92 /* User.h */,
 				D26E69F91E63423300E39A92 /* User.m */,
 				D26E69FB1E6342E800E39A92 /* Repository.h */,
@@ -570,6 +582,7 @@
 				D26E69FA1E63423300E39A92 /* User.m in Sources */,
 				D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */,
 				D2C68B891E62B28F00AFCD6F /* UserRequest.swift in Sources */,
+				D26E6A091E63603E00E39A92 /* Identifiable.swift in Sources */,
 				D26E69F41E62BEB500E39A92 /* SearchRepositoriesViewController.swift in Sources */,
 				D2C68B8B1E62B2BD00AFCD6F /* RepositoryRequest.swift in Sources */,
 			);

@@ -9,14 +9,14 @@
 import UIKit
 import Alamofire
 
-protocol UserRequestDelegate {
-
+protocol UserDataRequestDelegate {
+    func didReceiveData(data: User)
+    func didReceiveError()
 }
 
 class UserRequest: NSObject {
     
-    var userRequestDelegate: UserRequestDelegate?
-    
+    var userDataRequestDelegate: UserDataRequestDelegate?
     
     func request(name: String, page: String) {
         
@@ -26,8 +26,9 @@ class UserRequest: NSObject {
              switch(response.result) {
                 case .success(_):
                     //todo: Create Error Handling and Alerts 
-                    if response.result.value != nil{
-                        print(response.result.value!)
+                    if response.result.value != nil {
+//                        print(response.result.value!)
+                          self.userDataRequestDelegate?.didReceiveData(data: response.result.value as! User)
                     }
                 break
 

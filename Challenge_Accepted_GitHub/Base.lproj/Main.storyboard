@@ -21,12 +21,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H0n-tb-wQW">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="43" width="375" height="624"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="9Wi-MN-C6U" id="mVZ-Bc-zVo"/>
-                                    <outlet property="delegate" destination="9Wi-MN-C6U" id="usa-mG-Gz1"/>
+                                    <outlet property="dataSource" destination="9Wi-MN-C6U" id="o7w-Dk-kVE"/>
+                                    <outlet property="delegate" destination="9Wi-MN-C6U" id="3Lf-U5-wmE"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search for users" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBO-0G-MFD">
@@ -84,14 +84,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bb-8u-1Or" userLabel="UI Users">
-                                        <rect key="frame" x="0.0" y="308" width="170" height="80"/>
+                                        <rect key="frame" x="0.0" y="402" width="170" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-pS-ht0">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <color key="backgroundColor" red="0.42743593454360962" green="0.083674304187297821" blue="0.52513659000396729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Users"/>
                                                 <connections>
@@ -104,19 +104,19 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GitHub Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Y-dN-Ze1">
                                         <rect key="frame" x="63" y="188" width="250" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="0.94647079706192017" green="0.41073906421661377" blue="0.11769484728574753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqK-SO-rOF" userLabel="UI Repository">
-                                        <rect key="frame" x="205" y="308" width="170" height="80"/>
+                                        <rect key="frame" x="205" y="402" width="170" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mi6-zA-RGu">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <color key="backgroundColor" red="0.42743593454360962" green="0.083674304187297821" blue="0.52513659000396729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Repository"/>
                                                 <connections>
@@ -139,6 +139,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LYa-MA-HV2"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,8 +178,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="D9v-TD-tSE" id="0Wf-vg-V0F"/>
-                                    <outlet property="delegate" destination="D9v-TD-tSE" id="Tgi-dX-fZs"/>
+                                    <outlet property="dataSource" destination="D9v-TD-tSE" id="miU-Hy-YLz"/>
+                                    <outlet property="delegate" destination="D9v-TD-tSE" id="2fb-LT-k6M"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search for repositories" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBI-nQ-wNI">

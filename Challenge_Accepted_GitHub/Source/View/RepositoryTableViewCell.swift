@@ -8,8 +8,9 @@
 
 import UIKit
 
-class RepositoryTableViewCell: UITableViewCell {
+class RepositoryTableViewCell: UITableViewCell, Identifiable {
 
+    @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!

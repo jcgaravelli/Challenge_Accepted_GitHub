@@ -8,13 +8,15 @@
 
 import UIKit
 
-class UserTableViewCell: UITableViewCell {
+class UserTableViewCell: UITableViewCell, Identifiable {
 
+    @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var loginLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+
         // Initialization code
     }
 
