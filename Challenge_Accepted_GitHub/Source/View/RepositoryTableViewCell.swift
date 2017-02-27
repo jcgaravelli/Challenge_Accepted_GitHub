@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RepositoryTableViewCell: UITableViewCell, Identifiable {
+class RepositoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var fullNameLabel: UILabel!
@@ -21,7 +21,6 @@ class RepositoryTableViewCell: UITableViewCell, Identifiable {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

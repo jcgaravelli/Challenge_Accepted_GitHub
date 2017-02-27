@@ -10,11 +10,11 @@
 
 @implementation User
 
-- (User *)initWithDictionary:(NSDictionary *)dic {
+- (User *)initWithDictionary:(NSDictionary *)dict {
     self = [super init];
     if (self) {
-        _login = dic[@"login"];
-        _avatarUrl = dic[@"avatar_url"];
+        _login = dict[@"login"];
+        _avatarUrl = dict[@"avatar_url"];
     }
     return self;
 }

@@ -14,7 +14,7 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var userSearchBar: UISearchBar!
     
     let userRequest: UserRequest = UserRequest()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +33,16 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         userSearchBar?.resignFirstResponder()
-        userRequest.request(name: userSearchBar.text!, page: "1")
+        userRequest.request(name: userSearchBar.text!, page: "1", success: { users in
+                let userListArray = users?["items"]
+                if ((userListArray as AnyObject).count)! > 0 {
+                    print(userListArray!)
+                } else {
+                    print("Nenhum item encontrado!")
+                }
+            }, failure: { error in
+                print("Não foi possível encontrar as informações.")
+            })
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {

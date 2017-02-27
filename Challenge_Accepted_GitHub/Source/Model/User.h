@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *login;
 @property (nonatomic, strong) NSString *avatarUrl;
 
-- (User *)initWithDictionary:(NSDictionary *)dic;
+
+- (User *)initWithDictionary:(NSDictionary *)dict;
 
 @end

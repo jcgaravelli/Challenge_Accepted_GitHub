@@ -9,16 +9,10 @@
 import UIKit
 import Alamofire
 
-protocol UserDataRequestDelegate {
-    func didReceiveData(data: User)
-    func didReceiveError()
-}
 
 class UserRequest: NSObject {
-    
-    var userDataRequestDelegate: UserDataRequestDelegate?
-    
-    func request(name: String, page: String) {
+        
+    func request(name: String, page: String, success:@escaping (_ dict: Dictionary<String, Any>?) -> (), failure:@escaping (Error?) -> ()) {
         
         let jsonParameters: Parameters = [:]
     
@@ -27,8 +21,7 @@ class UserRequest: NSObject {
                 case .success(_):
                     //todo: Create Error Handling and Alerts 
                     if response.result.value != nil {
-//                        print(response.result.value!)
-                          self.userDataRequestDelegate?.didReceiveData(data: response.result.value as! User)
+                        success(response.result.value as! Dictionary<String, Any>?)
                     }
                 break
 
@@ -38,5 +31,4 @@ class UserRequest: NSObject {
             }
         }
     }
-    
 }

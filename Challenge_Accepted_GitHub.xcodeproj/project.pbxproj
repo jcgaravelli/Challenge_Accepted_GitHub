@@ -11,11 +11,10 @@
 		CAD455E4168D0A3848B1578A /* Pods_Challenge_Accepted_GitHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C2855CA2D0916307219879 /* Pods_Challenge_Accepted_GitHubUITests.framework */; };
 		CDCF6A714989800F0FBF7575 /* Pods_Challenge_Accepted_GitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BFAD6324D031190CAA56CE /* Pods_Challenge_Accepted_GitHub.framework */; };
 		D26E69F41E62BEB500E39A92 /* SearchRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E69F31E62BEB500E39A92 /* SearchRepositoriesViewController.swift */; };
-		D26E69FA1E63423300E39A92 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E69F91E63423300E39A92 /* User.m */; };
 		D26E69FD1E6342E800E39A92 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E69FC1E6342E800E39A92 /* Repository.m */; };
 		D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */; };
 		D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */; };
-		D26E6A091E63603E00E39A92 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A081E63603E00E39A92 /* Identifiable.swift */; };
+		D26E6A0E1E6384B000E39A92 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D26E6A0D1E6384B000E39A92 /* User.m */; };
 		D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2889B111E5FC73700570945 /* AppDelegate.swift */; };
 		D2889B171E5FC73700570945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2889B151E5FC73700570945 /* Main.storyboard */; };
 		D2889B191E5FC73700570945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2889B181E5FC73700570945 /* Assets.xcassets */; };
@@ -56,13 +55,12 @@
 		91C16322FD27E218BF64F84D /* Pods-Challenge_Accepted_GitHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubTests/Pods-Challenge_Accepted_GitHubTests.release.xcconfig"; sourceTree = "<group>"; };
 		D26E69F31E62BEB500E39A92 /* SearchRepositoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRepositoriesViewController.swift; path = Challenge_Accepted_GitHub/Source/Controller/SearchRepositoriesViewController.swift; sourceTree = SOURCE_ROOT; };
 		D26E69F71E63423300E39A92 /* Challenge_Accepted_GitHub-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Challenge_Accepted_GitHub-Bridging-Header.h"; path = "Source/Infrastructure/Challenge_Accepted_GitHub-Bridging-Header.h"; sourceTree = "<group>"; };
-		D26E69F81E63423300E39A92 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Challenge_Accepted_GitHub/Source/Model/User.h; sourceTree = SOURCE_ROOT; };
-		D26E69F91E63423300E39A92 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Challenge_Accepted_GitHub/Source/Model/User.m; sourceTree = SOURCE_ROOT; };
 		D26E69FB1E6342E800E39A92 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Repository.h; path = Challenge_Accepted_GitHub/Source/Model/Repository.h; sourceTree = SOURCE_ROOT; };
 		D26E69FC1E6342E800E39A92 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Repository.m; path = Challenge_Accepted_GitHub/Source/Model/Repository.m; sourceTree = SOURCE_ROOT; };
 		D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/UserTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/RepositoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		D26E6A081E63603E00E39A92 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = Challenge_Accepted_GitHub/Source/Model/Identifiable/Identifiable.swift; sourceTree = SOURCE_ROOT; };
+		D26E6A0D1E6384B000E39A92 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Challenge_Accepted_GitHub/Source/Model/User.m; sourceTree = SOURCE_ROOT; };
+		D26E6A0F1E6384C100E39A92 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Challenge_Accepted_GitHub/Source/Model/User.h; sourceTree = SOURCE_ROOT; };
 		D2889B0E1E5FC73700570945 /* Challenge_Accepted_GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge_Accepted_GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2889B111E5FC73700570945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2889B161E5FC73700570945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,15 +133,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D26E6A0A1E63604300E39A92 /* Identifiable */ = {
-			isa = PBXGroup;
-			children = (
-				D26E6A081E63603E00E39A92 /* Identifiable.swift */,
-			);
-			name = Identifiable;
-			path = ../Model/Identifiable;
-			sourceTree = "<group>";
-		};
 		D2889B051E5FC73700570945 = {
 			isa = PBXGroup;
 			children = (
@@ -210,11 +199,10 @@
 		D2889B401E5FD30000570945 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D26E6A0A1E63604300E39A92 /* Identifiable */,
-				D26E69F81E63423300E39A92 /* User.h */,
-				D26E69F91E63423300E39A92 /* User.m */,
 				D26E69FB1E6342E800E39A92 /* Repository.h */,
 				D26E69FC1E6342E800E39A92 /* Repository.m */,
+				D26E6A0F1E6384C100E39A92 /* User.h */,
+				D26E6A0D1E6384B000E39A92 /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -577,12 +565,11 @@
 			files = (
 				D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */,
 				D26E69FD1E6342E800E39A92 /* Repository.m in Sources */,
+				D26E6A0E1E6384B000E39A92 /* User.m in Sources */,
 				D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */,
 				D2D722901E61FA2800C1F208 /* SearchUsersViewController.swift in Sources */,
-				D26E69FA1E63423300E39A92 /* User.m in Sources */,
 				D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */,
 				D2C68B891E62B28F00AFCD6F /* UserRequest.swift in Sources */,
-				D26E6A091E63603E00E39A92 /* Identifiable.swift in Sources */,
 				D26E69F41E62BEB500E39A92 /* SearchRepositoriesViewController.swift in Sources */,
 				D2C68B8B1E62B2BD00AFCD6F /* RepositoryRequest.swift in Sources */,
 			);

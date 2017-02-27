@@ -25,6 +25,8 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
     }
     
     func configureTableView() {
+        let edgeInset = UIEdgeInsets(top: 5, left: 15, bottom: 5, right: 15)
+        self.repositoriesTableView.contentInset = edgeInset
         self.repositoriesTableView.isUserInteractionEnabled = false
         self.repositoriesTableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "RepositoryTableViewCell")
         self.repositoriesTableView.tableFooterView = UIView()

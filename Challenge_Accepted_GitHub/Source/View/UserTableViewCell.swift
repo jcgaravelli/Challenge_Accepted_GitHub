@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserTableViewCell: UITableViewCell, Identifiable {
+class UserTableViewCell: UITableViewCell {
 
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var avatarImage: UIImageView!
