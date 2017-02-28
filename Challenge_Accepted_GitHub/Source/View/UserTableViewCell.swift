@@ -19,10 +19,23 @@ class UserTableViewCell: UITableViewCell {
 
         // Initialization code
     }
+    
+    func setupInfoUser(user: User) {
+        loginLabel.text = user.login
+        
+        let url = URL(string: user.avatarUrl!)
+        DispatchQueue.global().async {
+            //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            let data = try? Data(contentsOf: url!)
+            DispatchQueue.main.async {
+                self.avatarImage.image = UIImage(data: data!)
+            }
+        }
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
 

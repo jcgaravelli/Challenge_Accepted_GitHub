@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSString *stargazers;
 @property (nonatomic, strong) NSDictionary *updatedAt;
 
-- (Repository *)initWithDictionary:(NSDictionary *)dic;
+- (Repository *)initWithDictionary:(NSDictionary *)dict;
 
 
 @end

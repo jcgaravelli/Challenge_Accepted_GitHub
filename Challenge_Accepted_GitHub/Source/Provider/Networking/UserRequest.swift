@@ -21,12 +21,11 @@ class UserRequest: NSObject {
                 case .success(_):
                     //todo: Create Error Handling and Alerts 
                     if response.result.value != nil {
-                        success(response.result.value as! Dictionary<String, Any>?)
+                          success(response.result.value as! Dictionary<String, Any>?)
                     }
-                break
-
+                    break
                 case .failure(_):
-                    print(response.result.error!)
+                    failure(response.result.error!)
                 break
             }
         }

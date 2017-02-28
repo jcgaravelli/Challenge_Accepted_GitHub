@@ -7,20 +7,21 @@
 //
 
 #import "Repository.h"
+#import "Challenge_Accepted_GitHub-Swift.h"
 
 @implementation Repository
 
-- (Repository *)initWithDictionary:(NSDictionary *)dic {
+- (Repository *)initWithDictionary:(NSDictionary *)dict {
     self = [super init];
     if (self) {
-        _name = dic[@"name"];
-        _fullName = dic[@"full_name"];
-        _language = dic[@"language"];
-        _descriptionRepo = dic[@"description"];
-        _fork = dic[@"fork"];
-        _forks = dic[@"forks"];
-        _stargazers = dic[@"stargazers_count"];
-        _updatedAt = dic[@"updated_at"];
+        _name = dict[@"name"];
+        _fullName = dict[@"full_name"];
+        _language = dict[@"language"];
+        _descriptionRepo = dict[@"description"];
+        _fork = dict[@"fork"];
+        _forks = dict[@"forks"];
+        _stargazers = dict[@"stargazers_count"];
+        _updatedAt = dict[@"updated_at"];
     }
     return self;
 }
