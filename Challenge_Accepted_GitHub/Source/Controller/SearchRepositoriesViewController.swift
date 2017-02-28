@@ -14,6 +14,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
     @IBOutlet weak var repositorySearchBar: UISearchBar!
     
     let repositoryRequest: RepositoryRequest = RepositoryRequest()
+    let alert:NotificationAlertAction = NotificationAlertAction()
     var repositoryList: [Repository] = []
     var currentPage = 1
     
@@ -57,11 +58,11 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
             if ((repositoryListArray as AnyObject).count)! > 0 {
                 self.setupRepositories(repositories: repositoryListArray as! Array<Any>)
             } else {
-                print("Nenhum item encontrado!")
+                self.alert.notification("Nenhum item encontrado!")
             }
         }, failure: { error in
                 print(error!)
-                print("Não foi possível encontrar as informações.")
+                self.alert.notification("Não foi possível encontrar as informações.")
         })
     }
     
