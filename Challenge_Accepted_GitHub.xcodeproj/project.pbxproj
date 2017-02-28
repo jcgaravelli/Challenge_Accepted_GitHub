@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38C16E501E65528100188373 /* XMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C16E4F1E65528100188373 /* XMainViewController.swift */; };
+		38C16E521E6558B900188373 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C16E511E6558B900188373 /* UIColors.swift */; };
 		A31B94803EEF68608C6E7125 /* Pods_Challenge_Accepted_GitHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648F8C981EBC2F0D3FAB2738 /* Pods_Challenge_Accepted_GitHubTests.framework */; };
 		CAD455E4168D0A3848B1578A /* Pods_Challenge_Accepted_GitHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C2855CA2D0916307219879 /* Pods_Challenge_Accepted_GitHubUITests.framework */; };
 		CDCF6A714989800F0FBF7575 /* Pods_Challenge_Accepted_GitHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BFAD6324D031190CAA56CE /* Pods_Challenge_Accepted_GitHub.framework */; };
@@ -51,6 +53,8 @@
 		2434CC076814854EDD925C67 /* Pods-Challenge_Accepted_GitHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubTests/Pods-Challenge_Accepted_GitHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		34C2855CA2D0916307219879 /* Pods_Challenge_Accepted_GitHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Accepted_GitHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BFAD6324D031190CAA56CE /* Pods_Challenge_Accepted_GitHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Accepted_GitHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C16E4F1E65528100188373 /* XMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMainViewController.swift; path = Challenge_Accepted_GitHub/Source/View/XMainViewController.swift; sourceTree = SOURCE_ROOT; };
+		38C16E511E6558B900188373 /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColors.swift; path = ../View/UIColors.swift; sourceTree = "<group>"; };
 		3D4DB70EC273357CC132AD9D /* Pods-Challenge_Accepted_GitHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHub/Pods-Challenge_Accepted_GitHub.release.xcconfig"; sourceTree = "<group>"; };
 		648F8C981EBC2F0D3FAB2738 /* Pods_Challenge_Accepted_GitHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Accepted_GitHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F34AD560710FC42F2D7EDC0 /* Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubUITests/Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 				D2D7228D1E61268700C1F208 /* RepositoryTableViewCell.xib */,
 				D2A069511E65588C002DDAB9 /* NotFoundTableViewCell.swift */,
 				D2A069521E65588C002DDAB9 /* NotFoundTableViewCell.xib */,
+				38C16E4F1E65528100188373 /* XMainViewController.swift */,
+				38C16E511E6558B900188373 /* UIColors.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -567,10 +573,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2A069531E65588C002DDAB9 /* NotFoundTableViewCell.swift in Sources */,
+				38C16E521E6558B900188373 /* UIColors.swift in Sources */,
 				D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */,
 				D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */,
 				D2D722901E61FA2800C1F208 /* SearchUsersViewController.swift in Sources */,
 				D26E6A021E6347A500E39A92 /* UserTableViewCell.swift in Sources */,
+				38C16E501E65528100188373 /* XMainViewController.swift in Sources */,
 				D2C68B891E62B28F00AFCD6F /* UserRequest.swift in Sources */,
 				D26E69F41E62BEB500E39A92 /* SearchRepositoriesViewController.swift in Sources */,
 				D2A069501E6547A1002DDAB9 /* Repository.swift in Sources */,

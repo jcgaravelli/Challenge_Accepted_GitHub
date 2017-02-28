@@ -19,6 +19,9 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationController?.isNavigationBarHidden = false
+        
         configureTableView()
     }
     

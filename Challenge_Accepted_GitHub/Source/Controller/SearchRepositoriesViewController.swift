@@ -19,6 +19,9 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationController?.isNavigationBarHidden = false
+        
         configureTableView()
     }
     
