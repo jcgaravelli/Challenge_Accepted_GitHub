@@ -19,14 +19,12 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.usersTableView.delegate = self
-        self.usersTableView.dataSource = self
-
         configureTableView()
     }
     
     func configureTableView() {
+        self.usersTableView.delegate = self
+        self.usersTableView.dataSource = self
         self.usersTableView.isUserInteractionEnabled = true
         self.usersTableView.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCell")
         self.usersTableView.tableFooterView = UIView()
@@ -42,6 +40,10 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         searchRequest()
     }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        //todo: Create cancel request action
+    }
+    
     func searchRequest() {
         userRequest.request(name: userSearchBar.text!, page: String(currentPage), success: { users in
             guard let userListArray = users?["items"] else {
@@ -53,17 +55,14 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
                 print("Nenhum item encontrado!")
             }
         }, failure: { error in
+                print(error!)
                 print("Não foi possível encontrar as informações.")
         })
     }
     
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        //todo: Create cancel request action
-    }
-    
     func setupUsers(users: Array<Any>) {
         for user in users {
-            self.userList.append(User.init(dictionary: user as! [String : Any]))
+            self.userList.append(User.init(dict: user as! [String : Any]))
         }
         DispatchQueue.main.async(execute: {
             self.usersTableView.reloadData()
@@ -81,7 +80,7 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
 extension SearchUsersViewController {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userList.count // your number of cell here
+        return userList.count 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,7 +90,7 @@ extension SearchUsersViewController {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == userList.count - 1 {
+        if indexPath.row == userList.count - 1 && userList.count >= 30 {
             currentPage += 1
             searchRequest()
         }

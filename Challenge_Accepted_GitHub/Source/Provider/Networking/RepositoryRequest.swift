@@ -18,21 +18,20 @@ class RepositoryRequest: NSObject {
     var repositoryRequestDelegate: RepositoryRequestDelegate?
     
     
-    func request(name: String, page: String) {
+    func request(name: String, page: String, success:@escaping (_ dict: Dictionary<String, Any>?) -> (), failure:@escaping (Error?) -> ()) {
         
         let jsonParameters: Parameters = [:]
     
         Alamofire.request("https://api.github.com/search/repositories?q="+name+"&page="+page, method: .get, parameters: jsonParameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
              switch(response.result) {
                 case .success(_):
-                    //todo: Create Error Handling and Alerts
-                    if response.result.value != nil{
-                        print(response.result.value!)
+                    //todo: Create Error Handling and Alerts 
+                    if response.result.value != nil {
+                          success(response.result.value as! Dictionary<String, Any>?)
                     }
-                break
-
+                    break
                 case .failure(_):
-                    print(response.result.error!)
+                    failure(response.result.error!)
                 break
             }
         }

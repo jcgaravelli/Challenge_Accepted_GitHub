@@ -16,8 +16,8 @@ class UserTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        // Initialization code
+        self.avatarImage.layer.cornerRadius = self.avatarImage.frame.size.width / 3;
+        self.avatarImage.clipsToBounds = true;
     }
     
     func setupInfoUser(user: User) {
@@ -35,7 +35,6 @@ class UserTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
         // Configure the view for the selected state
     }
 

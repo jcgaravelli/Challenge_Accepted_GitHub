@@ -14,11 +14,9 @@ class User: NSObject {
     var login: String!
     var avatarUrl: String?
     
-    init(dictionary: [String : Any]){
-        self.id = dictionary["id"] as! NSNumber
-        self.login = dictionary["login"] as! String
-        self.avatarUrl = dictionary["avatar_url"] as? String
+    init(dict: [String : Any]){
+        self.id = dict["id"] as! NSNumber
+        self.login = dict["login"] as! String
+        self.avatarUrl = dict["avatar_url"] as? String
     }
-    
-    
 }

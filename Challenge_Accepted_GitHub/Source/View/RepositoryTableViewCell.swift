@@ -18,14 +18,21 @@ class RepositoryTableViewCell: UITableViewCell {
     @IBOutlet weak var forksLabel: UILabel!
     @IBOutlet weak var updatedAtLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func setupInfoRepository(repository: Repository) {
+        fullNameLabel.text = repository.fullName
+        descriptionLabel.text = repository.descript
+        languageLabel.text = repository.language
+        stargazersLabel.text = repository.stargazers?.stringValue
+        forksLabel.text = repository.forks?.stringValue
+        updatedAtLabel.text = repository.updatedAt
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
