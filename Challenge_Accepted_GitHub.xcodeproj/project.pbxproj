@@ -23,8 +23,6 @@
 		D2889B321E5FC73800570945 /* Challenge_Accepted_GitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2889B311E5FC73800570945 /* Challenge_Accepted_GitHubUITests.swift */; };
 		D2A0694E1E653D2F002DDAB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A0694D1E653D2F002DDAB9 /* User.swift */; };
 		D2A069501E6547A1002DDAB9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A0694F1E6547A1002DDAB9 /* Repository.swift */; };
-		D2A069531E65588C002DDAB9 /* NotFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A069511E65588C002DDAB9 /* NotFoundTableViewCell.swift */; };
-		D2A069541E65588C002DDAB9 /* NotFoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A069521E65588C002DDAB9 /* NotFoundTableViewCell.xib */; };
 		D2C68B891E62B28F00AFCD6F /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C68B881E62B28F00AFCD6F /* UserRequest.swift */; };
 		D2C68B8B1E62B2BD00AFCD6F /* RepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C68B8A1E62B2BD00AFCD6F /* RepositoryRequest.swift */; };
 		D2D7228C1E6124FC00C1F208 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */; };
@@ -77,8 +75,6 @@
 		D2889B331E5FC73800570945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A0694D1E653D2F002DDAB9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Challenge_Accepted_GitHub/Source/Model/User.swift; sourceTree = SOURCE_ROOT; };
 		D2A0694F1E6547A1002DDAB9 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Challenge_Accepted_GitHub/Source/Model/Repository.swift; sourceTree = SOURCE_ROOT; };
-		D2A069511E65588C002DDAB9 /* NotFoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotFoundTableViewCell.swift; path = Challenge_Accepted_GitHub/Source/View/NotFoundTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		D2A069521E65588C002DDAB9 /* NotFoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NotFoundTableViewCell.xib; path = Challenge_Accepted_GitHub/Source/View/NotFoundTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		D2C68B881E62B28F00AFCD6F /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRequest.swift; path = Challenge_Accepted_GitHub/Source/Provider/Networking/UserRequest.swift; sourceTree = SOURCE_ROOT; };
 		D2C68B8A1E62B2BD00AFCD6F /* RepositoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryRequest.swift; path = Challenge_Accepted_GitHub/Source/Provider/Networking/RepositoryRequest.swift; sourceTree = SOURCE_ROOT; };
 		D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTableViewCell.xib; path = ../View/UserTableViewCell.xib; sourceTree = "<group>"; };
@@ -219,8 +215,6 @@
 				D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */,
 				D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */,
 				D2D7228D1E61268700C1F208 /* RepositoryTableViewCell.xib */,
-				D2A069511E65588C002DDAB9 /* NotFoundTableViewCell.swift */,
-				D2A069521E65588C002DDAB9 /* NotFoundTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -413,7 +407,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A069541E65588C002DDAB9 /* NotFoundTableViewCell.xib in Resources */,
 				D2D7228E1E61268700C1F208 /* RepositoryTableViewCell.xib in Resources */,
 				D2889B1C1E5FC73700570945 /* LaunchScreen.storyboard in Resources */,
 				D2889B191E5FC73700570945 /* Assets.xcassets in Resources */,
@@ -581,7 +574,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A069531E65588C002DDAB9 /* NotFoundTableViewCell.swift in Sources */,
 				38C16E521E6558B900188373 /* UIColors.swift in Sources */,
 				D26E6A041E6347E800E39A92 /* RepositoryTableViewCell.swift in Sources */,
 				D2889B121E5FC73700570945 /* AppDelegate.swift in Sources */,
