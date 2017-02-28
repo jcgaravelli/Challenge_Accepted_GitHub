@@ -15,7 +15,7 @@ class XMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.isNavigationBarHidden = true
+        // Do any additional setup after loading the view.
         
         //xUsersButton color.
         self.xUsersButton.layer.cornerRadius = 10
@@ -27,10 +27,20 @@ class XMainViewController: UIViewController {
         self.xRepositoriesButton.layer.borderWidth = 1
         self.xRepositoriesButton.layer.borderColor = UIColor.borderGray().cgColor
         
-
-        // Do any additional setup after loading the view.
-        
-        
+        //Navigation settings color.
+        self.navigationController?.navigationBar.barTintColor = UIColor.borderGray()
+        self.navigationController?.navigationBar.tintColor = UIColor.xYellow()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.xYellow()]
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor.xYellow()
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     override func didReceiveMemoryWarning() {

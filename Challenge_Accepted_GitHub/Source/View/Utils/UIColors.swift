@@ -12,7 +12,14 @@ extension UIColor {
     
     //  *******COLOR UICOMPONENTS STORYBOARD AND PROGRAMMATICALLY********
     
+    //Gray color.
     class func borderGray() -> UIColor {
         return UIColor(red: 66.0/255, green: 66.0/255, blue: 66.0/255, alpha: 1.0)
+    }
+    
+    //Yellow color.
+    class func xYellow() -> UIColor {
+        return UIColor(red: 215.0/255, green: 208.0/255, blue: 61.0/255, alpha: 1.0)
+        
     }
 }
