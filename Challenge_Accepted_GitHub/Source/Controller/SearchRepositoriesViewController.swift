@@ -46,6 +46,7 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         //todo: Create cancel request action
+        repositorySearchBar.text = ""
     }
     
     func searchRequest() {

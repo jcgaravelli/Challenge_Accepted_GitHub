@@ -38,7 +38,9 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         //initial values
         self.userList = []
         currentPage = 1
-        self.usersTableView.reloadData()
+        DispatchQueue.main.async(execute: {
+            self.usersTableView.reloadData()
+        })
 
         userSearchBar?.resignFirstResponder()
         searchRequest()
@@ -46,6 +48,7 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         //todo: Create cancel request action
+        userSearchBar.text = ""
     }
     
     func searchRequest() {

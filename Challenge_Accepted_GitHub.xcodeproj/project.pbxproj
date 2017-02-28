@@ -367,8 +367,9 @@
 				TargetAttributes = {
 					D2889B0D1E5FC73700570945 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RNDEU24TQS;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					D2889B211E5FC73800570945 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -738,12 +739,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RNDEU24TQS;
 				INFOPLIST_FILE = "$(SRCROOT)/Challenge_Accepted_GitHub/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.challenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgneri.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Challenge_Accepted_GitHub/Source/Infrastructure/Challenge_Accepted_GitHub-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -757,12 +758,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RNDEU24TQS;
 				INFOPLIST_FILE = "$(SRCROOT)/Challenge_Accepted_GitHub/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.challenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pgneri.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Challenge_Accepted_GitHub/Source/Infrastructure/Challenge_Accepted_GitHub-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

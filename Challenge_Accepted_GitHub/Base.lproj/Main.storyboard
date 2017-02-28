@@ -36,6 +36,7 @@
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search for users" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBO-0G-MFD">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.84313725490000002" green="0.81568627449999997" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -92,7 +93,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Y-dN-Ze1">
-                                        <rect key="frame" x="8" y="93" width="359" height="36"/>
+                                        <rect key="frame" x="8" y="130" width="359" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="Rn0-mY-CKy"/>
                                         </constraints>
@@ -105,7 +106,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="TXn-2P-mQc">
-                                        <rect key="frame" x="85" y="150" width="205" height="249"/>
+                                        <rect key="frame" x="85" y="187" width="205" height="212"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mi6-zA-RGu">
                                         <rect key="frame" x="201.5" y="442" width="164.5" height="62"/>
@@ -142,7 +143,7 @@
                                 <constraints>
                                     <constraint firstItem="TXn-2P-mQc" firstAttribute="top" secondItem="Y2Y-dN-Ze1" secondAttribute="bottom" constant="21" id="0IM-o5-Wm5"/>
                                     <constraint firstItem="Y2Y-dN-Ze1" firstAttribute="leading" secondItem="ize-aD-Idj" secondAttribute="leadingMargin" id="2KP-ea-2cB"/>
-                                    <constraint firstItem="Y2Y-dN-Ze1" firstAttribute="top" secondItem="ize-aD-Idj" secondAttribute="top" constant="93" id="456-JR-jjd"/>
+                                    <constraint firstItem="Y2Y-dN-Ze1" firstAttribute="top" secondItem="ize-aD-Idj" secondAttribute="top" constant="130" id="456-JR-jjd"/>
                                     <constraint firstItem="mi6-zA-RGu" firstAttribute="leading" secondItem="cBz-xl-HdE" secondAttribute="trailing" constant="-4" id="8bi-yF-I1V"/>
                                     <constraint firstItem="mi6-zA-RGu" firstAttribute="leading" secondItem="IYK-pS-ht0" secondAttribute="trailing" constant="29" id="8dZ-pR-0aJ"/>
                                     <constraint firstAttribute="trailing" secondItem="LqK-SO-rOF" secondAttribute="trailing" constant="-55" id="8zj-Rd-dwX"/>
@@ -227,6 +228,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="Search for repositories" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBI-nQ-wNI">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="tintColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.84313725490000002" green="0.81568627449999997" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
