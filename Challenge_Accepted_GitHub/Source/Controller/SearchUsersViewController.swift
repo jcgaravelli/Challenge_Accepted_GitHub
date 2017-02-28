@@ -20,6 +20,8 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.isNavigationBarHidden = false
+        
         self.usersTableView.delegate = self
         self.usersTableView.dataSource = self
 
