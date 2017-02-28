@@ -53,8 +53,8 @@
 		2434CC076814854EDD925C67 /* Pods-Challenge_Accepted_GitHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubTests/Pods-Challenge_Accepted_GitHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		34C2855CA2D0916307219879 /* Pods_Challenge_Accepted_GitHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Accepted_GitHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BFAD6324D031190CAA56CE /* Pods_Challenge_Accepted_GitHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Accepted_GitHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38C16E4F1E65528100188373 /* XMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMainViewController.swift; path = Challenge_Accepted_GitHub/Source/View/XMainViewController.swift; sourceTree = SOURCE_ROOT; };
-		38C16E511E6558B900188373 /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColors.swift; path = ../View/UIColors.swift; sourceTree = "<group>"; };
+		38C16E4F1E65528100188373 /* XMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMainViewController.swift; path = Challenge_Accepted_GitHub/Source/Controller/XMainViewController.swift; sourceTree = SOURCE_ROOT; };
+		38C16E511E6558B900188373 /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		3D4DB70EC273357CC132AD9D /* Pods-Challenge_Accepted_GitHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHub/Pods-Challenge_Accepted_GitHub.release.xcconfig"; sourceTree = "<group>"; };
 		648F8C981EBC2F0D3FAB2738 /* Pods_Challenge_Accepted_GitHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_Accepted_GitHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F34AD560710FC42F2D7EDC0 /* Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Challenge_Accepted_GitHubUITests/Pods-Challenge_Accepted_GitHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,14 +214,13 @@
 		D2889B411E5FD30B00570945 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D2A069551E655D9D002DDAB9 /* Utils */,
 				D26E6A011E6347A500E39A92 /* UserTableViewCell.swift */,
 				D2D7228B1E6124FC00C1F208 /* UserTableViewCell.xib */,
 				D26E6A031E6347E800E39A92 /* RepositoryTableViewCell.swift */,
 				D2D7228D1E61268700C1F208 /* RepositoryTableViewCell.xib */,
 				D2A069511E65588C002DDAB9 /* NotFoundTableViewCell.swift */,
 				D2A069521E65588C002DDAB9 /* NotFoundTableViewCell.xib */,
-				38C16E4F1E65528100188373 /* XMainViewController.swift */,
-				38C16E511E6558B900188373 /* UIColors.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -229,6 +228,7 @@
 		D2889B421E5FD32B00570945 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				38C16E4F1E65528100188373 /* XMainViewController.swift */,
 				D2D7228F1E61FA2800C1F208 /* SearchUsersViewController.swift */,
 				D26E69F31E62BEB500E39A92 /* SearchRepositoriesViewController.swift */,
 			);
@@ -285,6 +285,15 @@
 				D2889B111E5FC73700570945 /* AppDelegate.swift */,
 			);
 			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		D2A069551E655D9D002DDAB9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38C16E511E6558B900188373 /* UIColors.swift */,
+			);
+			name = Utils;
+			path = ../View/Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

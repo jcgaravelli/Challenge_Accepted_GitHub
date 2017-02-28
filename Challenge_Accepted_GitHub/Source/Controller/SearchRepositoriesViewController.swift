@@ -28,8 +28,6 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
     func configureTableView() {
         self.repositoriesTableView.delegate = self
         self.repositoriesTableView.dataSource = self
-        let edgeInset = UIEdgeInsets(top: 5, left: 15, bottom: 5, right: 15)
-        self.repositoriesTableView.contentInset = edgeInset
         self.repositoriesTableView.isUserInteractionEnabled = true
         self.repositoriesTableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "RepositoryTableViewCell")
         self.repositoriesTableView.tableFooterView = UIView()
@@ -91,6 +89,7 @@ extension SearchRepositoriesViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryTableViewCell", for: indexPath) as! RepositoryTableViewCell
         cell.setupInfoRepository(repository: repositoryList[indexPath.row])
+        cell.isUserInteractionEnabled = false
         return cell
     }
     

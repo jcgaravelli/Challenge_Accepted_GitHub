@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 
-
 class UserRequest: NSObject {
         
     func request(name: String, page: String, success:@escaping (_ dict: Dictionary<String, Any>?) -> (), failure:@escaping (Error?) -> ()) {

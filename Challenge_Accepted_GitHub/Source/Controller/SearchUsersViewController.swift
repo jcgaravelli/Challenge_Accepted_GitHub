@@ -89,6 +89,7 @@ extension SearchUsersViewController {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
         cell.setupInfoUser(user: userList[indexPath.row])
+        cell.isUserInteractionEnabled = false
         return cell
     }
     

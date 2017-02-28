@@ -9,14 +9,7 @@
 import UIKit
 import Alamofire
 
-protocol RepositoryRequestDelegate {
-
-}
-
 class RepositoryRequest: NSObject {
-    
-    var repositoryRequestDelegate: RepositoryRequestDelegate?
-    
     
     func request(name: String, page: String, success:@escaping (_ dict: Dictionary<String, Any>?) -> (), failure:@escaping (Error?) -> ()) {
         
