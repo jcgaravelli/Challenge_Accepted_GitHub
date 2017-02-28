@@ -10,7 +10,7 @@
 
 @implementation NotificationAlertAction
 
-
+//Notification Allert.
 - (void)notification:(NSString *)message {
     UIAlertController * alert = [UIAlertController
                 alertControllerWithTitle:message

@@ -19,6 +19,8 @@ class Repository: NSObject {
     var stargazers: NSNumber?
     var updatedAt: String?
     
+    
+    //Dictionary Repositories
     init(dict: [String : Any]){
         self.id = dict["id"] as! NSNumber!
         self.name = dict["name"] as! String
