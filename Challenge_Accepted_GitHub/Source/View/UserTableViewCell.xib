@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fork-icon" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-jM-zOX">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="OO6-jM-zOX">
                         <rect key="frame" x="8" y="8" width="50" height="50"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-y5-r0Q">
@@ -27,7 +27,7 @@
                             <constraint firstAttribute="width" constant="292" id="uNK-Kn-jK6"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.94647079706192017" green="0.41073906421661377" blue="0.11769484728574753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -49,6 +49,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="fork-icon" width="128" height="128"/>
+        <image name="avatar" width="211" height="211"/>
     </resources>
 </document>

@@ -38,7 +38,8 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         //initial values
         self.userList = []
         currentPage = 1
-        
+        self.usersTableView.reloadData()
+
         userSearchBar?.resignFirstResponder()
         searchRequest()
     }
