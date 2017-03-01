@@ -10,7 +10,8 @@ import UIKit
 import Alamofire
 
 class UserRequest: NSObject {
-        
+    
+    //Alamofire request user.
     func request(name: String, page: String, success:@escaping (_ dict: Dictionary<String, Any>?) -> (), failure:@escaping (Error?) -> ()) {
         
         let jsonParameters: Parameters = [:]

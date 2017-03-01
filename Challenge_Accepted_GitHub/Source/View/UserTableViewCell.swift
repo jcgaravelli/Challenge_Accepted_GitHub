@@ -9,7 +9,7 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var loginLabel: UILabel!
@@ -20,6 +20,7 @@ class UserTableViewCell: UITableViewCell {
         self.avatarImage.clipsToBounds = true;
     }
     
+    //Setup a information user.
     func setupInfoUser(user: User) {
         loginLabel.text = user.login
         
@@ -32,10 +33,10 @@ class UserTableViewCell: UITableViewCell {
             }
         }
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-
+    
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class RepositoryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var innerView: UIView!
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -22,6 +22,7 @@ class RepositoryTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    //Setup information repository.
     func setupInfoRepository(repository: Repository) {
         fullNameLabel.text = repository.fullName
         descriptionLabel.text = repository.descript
@@ -30,10 +31,10 @@ class RepositoryTableViewCell: UITableViewCell {
         forksLabel.text = repository.forks?.stringValue
         updatedAtLabel.text = repository.updatedAt
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-
+    
 }

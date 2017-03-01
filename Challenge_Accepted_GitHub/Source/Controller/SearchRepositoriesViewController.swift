@@ -9,7 +9,7 @@
 import UIKit
 
 class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
-
+    
     @IBOutlet weak var repositoriesTableView: UITableView!
     @IBOutlet weak var repositorySearchBar: UISearchBar!
     
@@ -17,14 +17,16 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
     var repositoryList: [Repository] = []
     var currentPage = 1
     
+    
+    //MARK: - View lifecycle.
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.isNavigationBarHidden = false
         
+        self.navigationController?.isNavigationBarHidden = false
         configureTableView()
     }
     
+    //MARK: - Private Methods
     func configureTableView() {
         self.repositoriesTableView.delegate = self
         self.repositoriesTableView.dataSource = self
@@ -34,6 +36,8 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
         self.repositoriesTableView.reloadData()
     }
     
+    
+    //MARK: - SearchBar Delegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         //initial values
         self.repositoryList = []
@@ -48,6 +52,8 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
         //todo: Create cancel request action
     }
     
+    
+    //Search request repository.
     func searchRequest() {
         repositoryRequest.request(name: repositorySearchBar.text!, page: String(currentPage), success: { repositories in
             guard let repositoryListArray = repositories?["items"] else {
@@ -59,11 +65,13 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
                 print("Nenhum item encontrado!")
             }
         }, failure: { error in
-                print(error!)
-                print("Não foi possível encontrar as informações.")
+            print(error!)
+            print("Não foi possível encontrar as informações.")
         })
     }
     
+    
+    //Setup repository tableView.
     func setupRepositories(repositories: Array<Any>) {
         for repository in repositories {
             self.repositoryList.append(Repository.init(dict: repository as! [String : Any]))
@@ -72,22 +80,27 @@ class SearchRepositoriesViewController: UIViewController, UITableViewDelegate, U
             self.repositoriesTableView.reloadData()
         })
     }
-
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
 
-extension SearchRepositoriesViewController {
 
+//MARK: TableViewDataSource
+
+extension SearchRepositoriesViewController {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repositoryList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryTableViewCell", for: indexPath) as! RepositoryTableViewCell
+        
+        //configure cell
         cell.setupInfoRepository(repository: repositoryList[indexPath.row])
         cell.isUserInteractionEnabled = false
         return cell
@@ -103,7 +116,7 @@ extension SearchRepositoriesViewController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // cell selected code here
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }

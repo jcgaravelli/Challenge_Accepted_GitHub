@@ -9,21 +9,23 @@
 import UIKit
 
 class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var usersTableView: UITableView!
     @IBOutlet weak var userSearchBar: UISearchBar!
     
     let userRequest: UserRequest = UserRequest()
     var userList: [User] = []
     var currentPage = 1
-
+    
+    
+    //MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.isNavigationBarHidden = false
         
+        self.navigationController?.isNavigationBarHidden = false
         configureTableView()
     }
+    
     
     func configureTableView() {
         self.usersTableView.delegate = self
@@ -34,12 +36,15 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         self.usersTableView.reloadData()
     }
     
+    
+    //MARK: - SearchBar Delegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
         //initial values
         self.userList = []
         currentPage = 1
         self.usersTableView.reloadData()
-
+        
         userSearchBar?.resignFirstResponder()
         searchRequest()
     }
@@ -48,6 +53,7 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         //todo: Create cancel request action
     }
     
+    //Search Request user.
     func searchRequest() {
         userRequest.request(name: userSearchBar.text!, page: String(currentPage), success: { users in
             guard let userListArray = users?["items"] else {
@@ -59,11 +65,13 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
                 print("Nenhum item encontrado!")
             }
         }, failure: { error in
-                print(error!)
-                print("Não foi possível encontrar as informações.")
+            print(error!)
+            print("Não foi possível encontrar as informações.")
         })
     }
     
+    
+    //Setup user tableView.
     func setupUsers(users: Array<Any>) {
         for user in users {
             self.userList.append(User.init(dict: user as! [String : Any]))
@@ -78,17 +86,21 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-   
+    
 }
 
-extension SearchUsersViewController {
 
+//MARK: TableViewDataSource
+extension SearchUsersViewController {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userList.count 
+        return userList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
+        
+        //configure cell.
         cell.setupInfoUser(user: userList[indexPath.row])
         cell.isUserInteractionEnabled = false
         return cell
