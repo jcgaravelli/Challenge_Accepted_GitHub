@@ -1,5 +1,5 @@
 # Challenge_Accepted_GitHub
-Application challenge iOS for search repositories in GitHub.
+Application challenge iOS for search users and repositories in GitHub.
 <br>
 <br>
 <p align="center"> <img src="https://cloud.githubusercontent.com/assets/13202606/23442065/2453859e-fe05-11e6-8a52-fd2a8a5a4e80.PNG" width="250"/>
