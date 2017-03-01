@@ -15,8 +15,9 @@ class RepositoryRequest: NSObject {
     func request(name: String, page: String, success:@escaping (_ dict: Dictionary<String, Any>?) -> (), failure:@escaping (Error?) -> ()) {
         
         let jsonParameters: Parameters = [:]
-    
-        Alamofire.request("https://api.github.com/search/repositories?q="+name+"&page="+page, method: .get, parameters: jsonParameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
+        let replaced = name.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        
+        Alamofire.request("https://api.github.com/search/repositories?q="+replaced!+"&page="+page, method: .get, parameters: jsonParameters, encoding: URLEncoding.default, headers: nil).responseJSON { response in
              switch(response.result) {
                 case .success(_):
                     //todo: Create Error Handling and Alerts 

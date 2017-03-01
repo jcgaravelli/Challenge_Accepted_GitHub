@@ -14,6 +14,7 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var userSearchBar: UISearchBar!
     
     let userRequest: UserRequest = UserRequest()
+    let alert:NotificationAlertAction = NotificationAlertAction()
     var userList: [User] = []
     var currentPage = 1
     
@@ -43,14 +44,16 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
         //initial values
         self.userList = []
         currentPage = 1
-        self.usersTableView.reloadData()
-        
+        DispatchQueue.main.async(execute: {
+            self.usersTableView.reloadData()
+        })
         userSearchBar?.resignFirstResponder()
         searchRequest()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         //todo: Create cancel request action
+        userSearchBar.text = ""
     }
     
     //Search Request user.
@@ -62,11 +65,11 @@ class SearchUsersViewController: UIViewController, UITableViewDelegate, UITableV
             if ((userListArray as AnyObject).count)! > 0 {
                 self.setupUsers(users: userListArray as! Array<Any>)
             } else {
-                print("Nenhum item encontrado!")
+                self.alert.notification("Nenhum item encontrado!")
             }
         }, failure: { error in
             print(error!)
-            print("Não foi possível encontrar as informações.")
+            self.alert.notification("Não foi possível encontrar as informações.")
         })
     }
     
